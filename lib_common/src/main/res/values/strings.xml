@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">library_common</string>
+    <string name="viewModel">viewModel</string>
+</resources>

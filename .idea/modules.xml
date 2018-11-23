@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVVMDemo.iml" filepath="$PROJECT_DIR$/MVVMDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_mobile_manager/app_mobile_manager.iml" filepath="$PROJECT_DIR$/app_mobile_manager/app_mobile_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_common/lib_common.iml" filepath="$PROJECT_DIR$/lib_common/lib_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_opensource/lib_opensource.iml" filepath="$PROJECT_DIR$/lib_opensource/lib_opensource.iml" />
+      <module fileurl="file://E:\AndroidProject\MVVMDemo\lib_common\library_common.iml" filepath="E:\AndroidProject\MVVMDemo\lib_common\library_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_native_manage/module_native_manage.iml" filepath="$PROJECT_DIR$/module_native_manage/module_native_manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_user/module_user.iml" filepath="$PROJECT_DIR$/module_user/module_user.iml" />
+    </modules>
+  </component>
+</project>

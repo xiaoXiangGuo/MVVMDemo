@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api deps.support.annotations
+    api deps.support.appcompat
+    api deps.support.design
+    api deps.support.v4
+    api deps.support.constrain
+    api deps.support.recyclerview
+    testApi deps.junit
+    androidTestApi deps.test.runner
+    androidTestApi deps.test.espresso
+
+    api deps.arouter.api
+    annotationProcessor deps.arouter.annotation
+    //http
+    api deps.retrofit.retrofit
+    api deps.retrofit.gson
+    api deps.retrofit.adapter_rxjava2
+    api deps.rxjava.rxandroid
+    api deps.greendao
+    api deps.fillet_imageview
+    api deps.logger
+    api deps.recyclerview_helper
+
+}
+configurations.all {
+    resolutionStrategy.force  deps.support.annotations
+}

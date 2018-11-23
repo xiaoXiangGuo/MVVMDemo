@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app_mobile_manager</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="a_key_clear">一键清理</string>
+</resources>
